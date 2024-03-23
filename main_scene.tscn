@@ -1,6 +1,7 @@
-[gd_scene load_steps=5 format=3 uid="uid://l58kar4fi80n"]
+[gd_scene load_steps=6 format=3 uid="uid://l58kar4fi80n"]
 
 [ext_resource type="Texture2D" uid="uid://cv1s1fubmqy23" path="res://Grass.png" id="1_0iu36"]
+[ext_resource type="Texture2D" uid="uid://bagk1582bmn36" path="res://icon.svg" id="2_hidw3"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_3pdam"]
 texture = ExtResource("1_0iu36")
@@ -41,3 +42,27 @@ layer_0/tile_data = PackedInt32Array(0, 196608, 0, 65536, 196608, 1, 131072, 196
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
 shape = SubResource("RectangleShape2D_158ua")
+
+[node name="Icon" type="Sprite2D" parent="."]
+position = Vector2(39, 109)
+texture = ExtResource("2_hidw3")
+
+[node name="Icon2" type="Sprite2D" parent="."]
+position = Vector2(7, 74)
+texture = ExtResource("2_hidw3")
+
+[node name="Icon3" type="Sprite2D" parent="."]
+position = Vector2(33, 85)
+texture = ExtResource("2_hidw3")
+
+[node name="Icon4" type="Sprite2D" parent="."]
+position = Vector2(113, 138)
+texture = ExtResource("2_hidw3")
+
+[node name="Icon5" type="Sprite2D" parent="."]
+position = Vector2(30, 98)
+texture = ExtResource("2_hidw3")
+
+[node name="Icon6" type="Sprite2D" parent="."]
+position = Vector2(86, 92)
+texture = ExtResource("2_hidw3")
