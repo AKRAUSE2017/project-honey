@@ -12,7 +12,6 @@ func _ready():
 func _physics_process(delta):
 	set_direction()
 	set_animation()
-	make_scene_in_scene()
 	
 	var speed = SPEED
 	if not(direction.x == 0) and not(direction.y == 0): speed = speed * 0.75
@@ -37,12 +36,3 @@ func idle_animation():
 	elif Input.is_action_just_released("left"): animation.play("idle_left")
 	elif Input.is_action_just_released("up"): animation.play("idle_up")
 	elif Input.is_action_just_released("down"): animation.play("idle_down")
-	
-func make_scene_in_scene():
-	if Input.is_action_just_pressed(" left_click"): 
-		print("Left has been clicked")
-		var sky_scene = preload("res://testing_scene.tscn").instantiate()
-		sky_scene.global_position = get_global_mouse_position() - global_position
-		add_child(sky_scene)
-	pass
-	

@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://5dnmwir8tcqj"]
+
+[ext_resource type="Texture2D" uid="uid://b3rf7aojdx0g7" path="res://assets/placeholders/background.png" id="1_17pwj"]
+
+[node name="Popup" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(592, 328)
+scale = Vector2(0.744444, 0.744444)
+texture = ExtResource("1_17pwj")
