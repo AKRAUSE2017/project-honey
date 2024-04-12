@@ -18,18 +18,20 @@ func _physics_process(delta):
 	velocity.x = speed * direction.x
 	velocity.y = speed * direction.y
 	
-	move_and_slide()
+	if not($MiniGame): # if minigame is not a child of the character (i.e. minigame is not open)
+		move_and_slide()
 
 func set_direction():
 	direction.x = int(Input.is_action_pressed("right")) -  int(Input.is_action_pressed(("left")))
 	direction.y = int(Input.is_action_pressed("down")) -  int(Input.is_action_pressed(("up")))
 
 func set_animation():
-	if direction.x == 1: animation.play("walk_right")
-	elif direction.x == -1: animation.play("walk_left")
-	elif direction.y == 1: animation.play("walk_down")
-	elif direction.y == -1: animation.play("walk_up")
-	else: idle_animation()
+	if not($MiniGame): # if minigame is not a child of the character (i.e. minigame is not open)
+		if direction.x == 1: animation.play("walk_right")
+		elif direction.x == -1: animation.play("walk_left")
+		elif direction.y == 1: animation.play("walk_down")
+		elif direction.y == -1: animation.play("walk_up")
+		else: idle_animation()
 
 func idle_animation():
 	if Input.is_action_just_released("right"): animation.play("idle_right")
