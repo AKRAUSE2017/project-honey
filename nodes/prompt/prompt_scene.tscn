@@ -1,9 +1,9 @@
-[gd_scene load_steps=2 format=3 uid="uid://cyypvi8q2rek6"]
+[gd_scene load_steps=2 format=3 uid="uid://by8sdufpj4nix"]
 
-[ext_resource type="Script" path="res://scenes/minigames/prompt/prompt.gd" id="1_8o8qr"]
+[ext_resource type="Script" path="res://nodes/prompt/prompt_script.gd" id="1_pjise"]
 
-[node name="PromptScene" type="Node2D"]
-script = ExtResource("1_8o8qr")
+[node name="Prompt" type="Node2D"]
+script = ExtResource("1_pjise")
 
 [node name="PopupPanel" type="PopupPanel" parent="."]
 position = Vector2i(300, 500)
