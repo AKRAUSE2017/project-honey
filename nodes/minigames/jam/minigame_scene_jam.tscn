@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://5dnmwir8tcqj"]
+
+[ext_resource type="Script" path="res://nodes/minigames/jam/minigame_script_jam.gd" id="1_ijsfp"]
+[ext_resource type="Texture2D" uid="uid://b3rf7aojdx0g7" path="res://assets/placeholders/background.png" id="2_2fi6h"]
+
+[node name="MiniGame" type="Node2D"]
+script = ExtResource("1_ijsfp")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-6.10352e-05, 0)
+scale = Vector2(0.80625, 0.711111)
+texture = ExtResource("2_2fi6h")

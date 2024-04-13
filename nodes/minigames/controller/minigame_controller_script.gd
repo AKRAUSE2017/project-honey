@@ -1,5 +1,8 @@
 extends Node2D
 
+@export var minigame_id = ""
+@export var custom_prompt = ""
+
 # children
 @onready var area = $Area2D
 @onready var prompt = $Prompt
@@ -15,13 +18,15 @@ func _process(delta):
 	if prompt.visible:
 		if Input.is_action_just_released("esc"): prompt.visible = false
 		if Input.is_action_just_released("enter"):
-			var minigame = preload("res://nodes/minigames/minigame_scene.tscn").instantiate()
+			var minigame_path = "res://nodes/minigames/{id}/minigame_scene_{id}.tscn".format({"id": minigame_id})
+			var minigame = load(minigame_path).instantiate()
 			player.add_child(minigame)
 			prompt.visible = false
 
 func _on_area_2d_body_entered(body):
 	if (body.name == "CharacterBody2D"):
-		prompt.text = "Start minigame?"
+		if custom_prompt == "": prompt.text = "Start {id} minigame?".format({"id": minigame_id})
+		else: prompt.text = custom_prompt
 		prompt.visible = true
 		
 func _on_area_2d_body_exited(body):
