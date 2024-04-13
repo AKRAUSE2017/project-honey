@@ -5,6 +5,6 @@ extends Node2D
 
 @export var text = ""
 
-func _process(delta):
+func _process(_delta):
 	label.text = text
 	panel.visible = self.visible

@@ -14,7 +14,7 @@ func _ready():
 	area.connect("body_exited", _on_area_2d_body_exited)
 	prompt.visible = false
 
-func _process(delta):
+func _process(_delta):
 	if prompt.visible:
 		if Input.is_action_just_released("esc"): prompt.visible = false
 		if Input.is_action_just_released("enter"):

@@ -9,7 +9,7 @@ var direction = Vector2.ZERO
 func _ready():
 	animation.play("idle_down")
 
-func _physics_process(delta):
+func _physics_process(_delta):
 	set_direction()
 	set_animation()
 	
@@ -18,7 +18,7 @@ func _physics_process(delta):
 	velocity.x = speed * direction.x
 	velocity.y = speed * direction.y
 	
-	if not($MiniGame): # if minigame is not a child of the character (i.e. minigame is not open)
+	if not(get_node_or_null("MiniGame")): # if minigame is not a child of the character (i.e. minigame is not open)
 		move_and_slide()
 
 func set_direction():
@@ -26,7 +26,7 @@ func set_direction():
 	direction.y = int(Input.is_action_pressed("down")) -  int(Input.is_action_pressed(("up")))
 
 func set_animation():
-	if not($MiniGame): # if minigame is not a child of the character (i.e. minigame is not open)
+	if not(get_node_or_null("MiniGame")): # if minigame is not a child of the character (i.e. minigame is not open)
 		if direction.x == 1: animation.play("walk_right")
 		elif direction.x == -1: animation.play("walk_left")
 		elif direction.y == 1: animation.play("walk_down")
