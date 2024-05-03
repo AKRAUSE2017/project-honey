@@ -1,6 +1,7 @@
 [gd_scene load_steps=11 format=3 uid="uid://mexbb60hyuwq"]
 
 [ext_resource type="Script" path="res://nodes/minigames/honey/minigame_script_honey.gd" id="1_vcft4"]
+
 [ext_resource type="Texture2D" uid="uid://bby5wxv5vmtde" path="res://assets/placeholders/terrain_tiles_v2.png" id="2_7tm0v"]
 [ext_resource type="Texture2D" uid="uid://dymbypli07nsv" path="res://assets/placeholders/background_2.png" id="2_kjbo2"]
 [ext_resource type="Texture2D" uid="uid://qxptvto6hera" path="res://assets/placeholders/fence_tiles.png" id="3_es6qk"]
