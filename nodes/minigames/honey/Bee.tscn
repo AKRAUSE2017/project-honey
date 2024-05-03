@@ -1,4 +1,4 @@
-[gd_scene load_steps=44 format=3 uid="uid://fmomodgkw6g2"]
+[gd_scene load_steps=44 format=3 uid="uid://crt4bodfu5il1"]
 
 [ext_resource type="Script" path="res://nodes/minigames/honey/bee_script.gd" id="1_c02ni"]
 [ext_resource type="Texture2D" uid="uid://dfbac6du74818" path="res://assets/placeholders/Bee stuff/Bee_Attack.png" id="2_xqvlt"]
