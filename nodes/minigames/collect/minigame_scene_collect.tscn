@@ -1,0 +1,39 @@
+[gd_scene load_steps=6 format=3 uid="uid://5dnmwir8tcqj"]
+
+[ext_resource type="Script" path="res://nodes/minigames/collect/minigame_script_collect.gd" id="1_ijsfp"]
+[ext_resource type="Texture2D" uid="uid://b3rf7aojdx0g7" path="res://assets/placeholders/backgrounds/background.png" id="2_2fi6h"]
+[ext_resource type="PackedScene" uid="uid://cklljvbpph3xs" path="res://nodes/minigames/collect/player_scene_collect.tscn" id="3_ld7ho"]
+[ext_resource type="Texture2D" uid="uid://jbhoc61ksqb8" path="res://assets/placeholders/fruits/strawberry_jam.png" id="4_h5h0b"]
+[ext_resource type="Texture2D" uid="uid://dk7mwa3tydwpq" path="res://assets/placeholders/fruits/strawberry.png" id="5_h0ynd"]
+
+[node name="MiniGame" type="Node2D"]
+z_index = 1
+script = ExtResource("1_ijsfp")
+
+[node name="Background" type="Sprite2D" parent="."]
+position = Vector2(-6.10352e-05, 0)
+scale = Vector2(0.80625, 0.711111)
+texture = ExtResource("2_2fi6h")
+
+[node name="PlayerCollect" parent="." instance=ExtResource("3_ld7ho")]
+position = Vector2(0, 208)
+
+[node name="RecipeJam" type="Sprite2D" parent="."]
+position = Vector2(-464, -208)
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("4_h5h0b")
+
+[node name="RecipeLabel" type="RichTextLabel" parent="."]
+offset_left = -440.0
+offset_top = -219.0
+offset_right = -380.0
+offset_bottom = -173.0
+text = "Recipe:"
+fit_content = true
+metadata/_edit_use_anchors_ = true
+
+[node name="ProgressIcon" type="Sprite2D" parent="."]
+modulate = Color(1, 1, 1, 0.498039)
+position = Vector2(-360, -208)
+scale = Vector2(0.666667, 0.666667)
+texture = ExtResource("5_h0ynd")

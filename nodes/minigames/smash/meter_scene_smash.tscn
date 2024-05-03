@@ -1,0 +1,36 @@
+[gd_scene load_steps=6 format=3 uid="uid://djldggcxeqi1l"]
+
+[ext_resource type="Script" path="res://nodes/minigames/smash/meter_script_smash.gd" id="1_i8d51"]
+[ext_resource type="Texture2D" uid="uid://dhc7xm1rhf45" path="res://assets/placeholders/utilities/meter.png" id="1_wof4l"]
+[ext_resource type="Texture2D" uid="uid://bgd814tucb8y1" path="res://assets/placeholders/utilities/marker.png" id="2_uov4d"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_cwpyf"]
+size = Vector2(32, 17)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_orvf8"]
+size = Vector2(24, 20)
+
+[node name="MeterSceneSmash" type="Node2D"]
+script = ExtResource("1_i8d51")
+
+[node name="MeterArea" type="Area2D" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="MeterArea"]
+scale = Vector2(0.8, 1.15)
+texture = ExtResource("1_wof4l")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="MeterArea"]
+scale = Vector2(1, 1.4)
+shape = SubResource("RectangleShape2D_cwpyf")
+
+[node name="ArrowBody" type="CharacterBody2D" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="ArrowBody"]
+position = Vector2(-28, 7.15256e-07)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("2_uov4d")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ArrowBody"]
+position = Vector2(-8, 0)
+scale = Vector2(2, 0.65)
+shape = SubResource("RectangleShape2D_orvf8")

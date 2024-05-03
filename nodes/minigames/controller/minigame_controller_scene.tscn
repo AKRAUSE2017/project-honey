@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://cyypvi8q2rek6"]
 
 [ext_resource type="Script" path="res://nodes/minigames/controller/minigame_controller_script.gd" id="1_0rook"]
-[ext_resource type="Texture2D" uid="uid://p1kcolp8lg1e" path="res://assets/placeholders/apple.png" id="2_jdpuc"]
+[ext_resource type="Texture2D" uid="uid://p1kcolp8lg1e" path="res://assets/placeholders/fruits/apple.png" id="2_jdpuc"]
 [ext_resource type="PackedScene" uid="uid://by8sdufpj4nix" path="res://nodes/prompt/prompt_scene.tscn" id="3_ojum1"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_xy2nc"]
