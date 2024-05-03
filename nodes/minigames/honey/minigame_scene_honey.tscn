@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://mexbb60hyuwq"]
 
 [ext_resource type="Script" path="res://nodes/minigames/honey/minigame_script_honey.gd" id="1_vcft4"]
-[ext_resource type="Texture2D" uid="uid://dymbypli07nsv" path="res://assets/placeholders/background_2.png" id="2_kjbo2"]
+[ext_resource type="Texture2D" uid="uid://dymbypli07nsv" path="res://assets/placeholders/backgrounds/background_2.png" id="2_kjbo2"]
 
 [node name="MiniGame" type="Node2D"]
 script = ExtResource("1_vcft4")

@@ -1,6 +1,6 @@
 [gd_scene load_steps=6 format=3 uid="uid://l58kar4fi80n"]
 
-[ext_resource type="Texture2D" uid="uid://cv1s1fubmqy23" path="res://assets/placeholders/Grass.png" id="2_pas4e"]
+[ext_resource type="Texture2D" uid="uid://cv1s1fubmqy23" path="res://assets/placeholders/environment/Grass.png" id="2_pas4e"]
 [ext_resource type="PackedScene" uid="uid://cogmuyup3hprl" path="res://nodes/player/player_scene.tscn" id="3_b3nps"]
 [ext_resource type="PackedScene" uid="uid://cyypvi8q2rek6" path="res://nodes/minigames/controller/minigame_controller_scene.tscn" id="3_bq2h8"]
 
@@ -42,7 +42,7 @@ position = Vector2(576, 328)
 
 [node name="MiniGameController_Jam" parent="." instance=ExtResource("3_bq2h8")]
 position = Vector2(184, 432)
-minigame_id = "jam"
+minigame_id = "collect"
 custom_prompt = "Ready to start making jam?"
 
 [node name="MiniGameController_Honey" parent="." instance=ExtResource("3_bq2h8")]
