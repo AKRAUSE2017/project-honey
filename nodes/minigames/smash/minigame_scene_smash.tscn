@@ -21,7 +21,7 @@ position = Vector2(4, 61)
 texture = ExtResource("3_sldch")
 
 [node name="PlayerSceneSmash" parent="." instance=ExtResource("2_n6svi")]
-position = Vector2(0, 21)
+position = Vector2(0, 16)
 
 [node name="MeterSceneSmash" parent="." instance=ExtResource("3_bfxko")]
 position = Vector2(-72, 37)

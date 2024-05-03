@@ -1,6 +1,6 @@
 extends CharacterBody2D
 
-const JUMP_HEIGHT = 100.0
+const JUMP_HEIGHT = 120.0
 const GRAVITY = 5.0
 
 @export var can_jump = false # controlled by parent scene script
@@ -21,6 +21,9 @@ func _physics_process(delta):
 	if state == "jump":
 		velocity.y = velocity.y + GRAVITY
 		position.y = position.y + velocity.y * delta
+		if position.y > start_position.y:
+			position.y = start_position.y
+			state = "idle_down"
 	
 	animation.play(state)
 
