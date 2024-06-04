@@ -1,7 +1,7 @@
 [gd_scene load_steps=80 format=3 uid="uid://cogmuyup3hprl"]
 
 [ext_resource type="Script" path="res://nodes/player/player_script.gd" id="1_2ejbh"]
-[ext_resource type="Texture2D" uid="uid://c4itt47rr620g" path="res://assets/official/robot_sprite_sheet.png" id="2_8qe6l"]
+[ext_resource type="Texture2D" path="res://assets/official/robot_sprite_sheet.png" id="2_8qe6l"]
 [ext_resource type="Texture2D" uid="uid://b2m6ll7b66ncr" path="res://assets/placeholders/idle_down/idle_down1.png" id="2_gsd0n"]
 [ext_resource type="Texture2D" uid="uid://d08jhb4o7b2t6" path="res://assets/placeholders/idle_down/idle_down2.png" id="3_47rqs"]
 [ext_resource type="Texture2D" uid="uid://pu5g4iqa3mng" path="res://assets/placeholders/idle_down/idle_down3.png" id="4_8lo7n"]
