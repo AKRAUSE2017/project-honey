@@ -2,21 +2,25 @@ extends CharacterBody2D
 
 @onready var animation = $AnimatedSprite2D
 
-const SPEED = 300.0
+const SPEED = 150.0
+const ACCELERATION = 500
+const FRICTION = 500
 
 var direction = Vector2.ZERO
 
 func _ready():
+	position.x = 600
+	position.y = 300
 	animation.play("idle_down")
 
-func _physics_process(_delta):
+func _physics_process(delta):
 	set_direction()
 	set_animation()
 	
-	var speed = SPEED
-	if not(direction.x == 0) and not(direction.y == 0): speed = speed * 0.75
-	velocity.x = speed * direction.x
-	velocity.y = speed * direction.y
+	var norm_direction = (direction).normalized()
+	if(norm_direction != Vector2.ZERO):
+		velocity = velocity.move_toward(norm_direction*SPEED, ACCELERATION * delta)
+	else: velocity = velocity.move_toward(norm_direction*SPEED, FRICTION * delta)
 	
 	if not(get_node_or_null("MiniGame")): # if minigame is not a child of the character (i.e. minigame is not open)
 		move_and_slide()

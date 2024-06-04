@@ -238,7 +238,7 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_1xeey"]
-size = Vector2(54, 57)
+size = Vector2(23.25, 32)
 
 [node name="PlayerCollect" type="Node2D"]
 
@@ -246,9 +246,10 @@ size = Vector2(54, 57)
 script = ExtResource("1_a30mr")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CharacterBody2DCollect"]
-scale = Vector2(0.8, 0.8)
-sprite_frames = SubResource("SpriteFrames_ki4vo")
-animation = &"idle_down"
+texture_filter = 1
+position = Vector2(0, 4.76837e-07)
+sprite_frames = SubResource("SpriteFrames_8reyq")
+animation = &"walk_up"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2DCollect"]
 position = Vector2(2, -0.5)

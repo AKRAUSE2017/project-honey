@@ -11,29 +11,30 @@ z_index = 1
 script = ExtResource("1_ijsfp")
 
 [node name="Background" type="Sprite2D" parent="."]
-position = Vector2(-6.10352e-05, 0)
-scale = Vector2(0.80625, 0.711111)
+position = Vector2(0, 4.76837e-07)
+scale = Vector2(0.28125, 0.266667)
 texture = ExtResource("2_2fi6h")
 
 [node name="PlayerCollect" parent="." instance=ExtResource("3_ld7ho")]
-position = Vector2(0, 208)
+position = Vector2(0, 72)
 
 [node name="RecipeJam" type="Sprite2D" parent="."]
-position = Vector2(-464, -208)
-scale = Vector2(0.6, 0.6)
+position = Vector2(-158, -78)
+scale = Vector2(0.25, 0.25)
 texture = ExtResource("4_h5h0b")
 
 [node name="RecipeLabel" type="RichTextLabel" parent="."]
-offset_left = -440.0
-offset_top = -219.0
-offset_right = -380.0
-offset_bottom = -173.0
+offset_left = -149.0
+offset_top = -82.0
+offset_right = -89.0
+offset_bottom = -36.0
+scale = Vector2(0.32, 0.32)
 text = "Recipe:"
 fit_content = true
 metadata/_edit_use_anchors_ = true
 
 [node name="ProgressIcon" type="Sprite2D" parent="."]
 modulate = Color(1, 1, 1, 0.498039)
-position = Vector2(-360, -208)
-scale = Vector2(0.666667, 0.666667)
+position = Vector2(-118, -78)
+scale = Vector2(0.166667, 0.166667)
 texture = ExtResource("5_h0ynd")

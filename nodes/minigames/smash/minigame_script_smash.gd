@@ -1,6 +1,6 @@
 extends Node2D
 
-const SPACING = 40.008
+const SPACING = 15
 
 @onready var bucket = $Sprite2DBucket
 @onready var player = $PlayerSceneSmash/CharacterBody2D
@@ -37,8 +37,8 @@ func handle_jump():
 		var progress_icon_copy = get_node("ProgressIcon{i}".format({"i": smash_count}))
 		var sprite_path = "res://assets/placeholders/fruits/{type}_splat.png".format({"type": fruit_type})
 		progress_icon_copy.set_texture(load(sprite_path))
-		progress_icon_copy.scale.x = 1
-		progress_icon_copy.scale.y = 1
+		progress_icon_copy.scale.x = 0.25
+		progress_icon_copy.scale.y = 0.25
 		progress_icon_copy.rotation = random.randi_range(-180, 180)
 	else: self.queue_free()
 

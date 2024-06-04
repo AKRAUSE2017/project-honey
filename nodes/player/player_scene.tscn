@@ -238,7 +238,7 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_dqvnr"]
-size = Vector2(54, 57)
+size = Vector2(24, 33.6842)
 
 [node name="Player" type="Node2D"]
 
@@ -246,12 +246,15 @@ size = Vector2(54, 57)
 script = ExtResource("1_2ejbh")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CharacterBody2D"]
-scale = Vector2(0.8, 0.8)
-sprite_frames = SubResource("SpriteFrames_vxbbf")
-animation = &"idle_down"
+texture_filter = 1
+position = Vector2(0, 4.76837e-07)
+sprite_frames = SubResource("SpriteFrames_8xyc4")
+animation = &"walk_right"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
-position = Vector2(2, -0.5)
+position = Vector2(0, 9.53674e-07)
+scale = Vector2(1, 0.95)
 shape = SubResource("RectangleShape2D_dqvnr")
 
 [node name="Camera2D" type="Camera2D" parent="CharacterBody2D"]
+zoom = Vector2(0.75, 0.75)

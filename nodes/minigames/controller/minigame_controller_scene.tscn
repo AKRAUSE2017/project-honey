@@ -5,7 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://by8sdufpj4nix" path="res://nodes/prompt/prompt_scene.tscn" id="3_ojum1"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_xy2nc"]
-size = Vector2(96.5, 96)
+size = Vector2(60.125, 52)
 
 [node name="MiniGameController" type="Node2D"]
 script = ExtResource("1_0rook")
@@ -13,7 +13,7 @@ script = ExtResource("1_0rook")
 [node name="Area2D" type="Area2D" parent="."]
 
 [node name="Sprite2D" type="Sprite2D" parent="Area2D"]
-scale = Vector2(0.0351562, 0.0351562)
+scale = Vector2(0.015, 0.015)
 texture = ExtResource("2_jdpuc")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
