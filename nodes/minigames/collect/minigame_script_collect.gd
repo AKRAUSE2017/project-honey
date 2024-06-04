@@ -23,7 +23,7 @@ var objective_count = ""
 var collected = 0
 
 const MAX_OBJECTIVE_COUNT = 10
-const SPACING = 40.008
+const SPACING = 15
 
 func _ready():
 	game_width = background.texture.get_width() * background.scale.x

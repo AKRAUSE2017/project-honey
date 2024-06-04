@@ -5,7 +5,7 @@ extends CharacterBody2D
 
 @onready var animation = $AnimatedSprite2D
 
-const SPEED = 300.0
+const SPEED = 150
 
 var direction = Vector2.ZERO
 var sprite_width = 0
@@ -19,6 +19,7 @@ func _ready():
 	sprite_height = dims[1]
 
 func _physics_process(_delta):
+	print(position.x)
 	if not(get_node_or_null("../../MinigameSceneSmash")):
 		visible = true
 		set_direction()

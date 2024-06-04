@@ -3,7 +3,7 @@ extends Node2D
 @onready var area = $Area2D
 @onready var sprite = $Area2D/Sprite2D
 
-@export var speed = 200
+@export var speed = 120
 @export var y_bound = 0
 @export var type = ""
 
