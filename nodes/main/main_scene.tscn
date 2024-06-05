@@ -1841,6 +1841,10 @@ position = Vector2(88, 608)
 minigame_id = "collect"
 custom_prompt = "Ready to start making jam?"
 
+[node name="MiniGameController_Flower" parent="." instance=ExtResource("3_bq2h8")]
+position = Vector2(936, 409)
+minigame_id = "flower"
+
 [node name="MiniGameController_Honey" parent="." instance=ExtResource("3_bq2h8")]
 position = Vector2(-8, 608)
 minigame_id = "honey"
