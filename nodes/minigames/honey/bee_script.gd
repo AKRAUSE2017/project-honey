@@ -6,7 +6,7 @@ extends CharacterBody2D
 
 var dir = Vector2.ZERO
 var acceleration = 7
-const SPEED = 150
+const SPEED = 200
  
 var attacking = false
 
@@ -18,7 +18,7 @@ func _physics_process(delta):
 	
 	var speed = SPEED
 	velocity = velocity.lerp(dir * speed, acceleration * delta)
-	move_and_slide()
+	if player != null: move_and_slide()
 
 func _on_timer_timeout():
 	if player != null:
@@ -43,3 +43,8 @@ func bee_aniamtion():
 		elif dir.x == -1: animation.play("attack_left")
 		elif dir.y == 1: animation.play("attack_down")
 		elif dir.y == -1: animation.play("attack_up")
+
+
+func _on_area_2d_body_entered(body):
+	if (body.name == "PlayerCharacterBody2D"):
+		player = null

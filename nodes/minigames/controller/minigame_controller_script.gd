@@ -17,6 +17,7 @@ func _ready():
 	prompt.visible = false
 
 func _process(_delta):
+	clicked = true
 	if prompt.visible:
 		if Input.is_action_just_released("esc"): prompt.visible = false; clicked = false
 		if Input.is_action_just_released("enter") and clicked == true:

@@ -40,3 +40,4 @@ func idle_animation():
 	elif Input.is_action_just_released("left"): animation.play("idle_left")
 	elif Input.is_action_just_released("up"): animation.play("idle_up")
 	elif Input.is_action_just_released("down"): animation.play("idle_down")
+
