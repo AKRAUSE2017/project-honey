@@ -1,4 +1,4 @@
-[gd_scene load_steps=80 format=3 uid="uid://cogmuyup3hprl"]
+[gd_scene load_steps=81 format=3 uid="uid://cogmuyup3hprl"]
 
 [ext_resource type="Script" path="res://nodes/player/player_script.gd" id="1_2ejbh"]
 [ext_resource type="Texture2D" path="res://assets/official/robot_sprite_sheet.png" id="2_8qe6l"]
@@ -50,6 +50,7 @@
 [ext_resource type="Texture2D" uid="uid://berw7dadhntpp" path="res://assets/placeholders/walk_up/walk_up6.png" id="47_ugdlt"]
 [ext_resource type="Texture2D" uid="uid://c44mt1a1gts33" path="res://assets/placeholders/walk_up/walk_up7.png" id="48_4qch7"]
 [ext_resource type="Texture2D" uid="uid://cy6sqiajiwbt" path="res://assets/placeholders/walk_up/walk_up8.png" id="49_r8krv"]
+[ext_resource type="PackedScene" uid="uid://cj5106e5c3yb6" path="res://nodes/minigames/inventory/inv_ui.tscn" id="51_1tl53"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_vxbbf"]
 animations = [{
@@ -489,4 +490,12 @@ scale = Vector2(1, 0.95)
 shape = SubResource("RectangleShape2D_dqvnr")
 
 [node name="Camera2D" type="Camera2D" parent="CharacterBody2D"]
+
+[node name="Inv_UI" parent="CharacterBody2D" instance=ExtResource("51_1tl53")]
+offset_left = -62.0
+offset_top = -145.0
+offset_right = 67.0
+offset_bottom = -50.0
+
 zoom = Vector2(0.75, 0.75)
+

@@ -237,6 +237,7 @@ size = Vector2(23.25, 32)
 script = ExtResource("1_a30mr")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CharacterBody2DCollect"]
+modulate = Color(0.85015, 0.875098, 1, 1)
 texture_filter = 1
 position = Vector2(0, 4.76837e-07)
 sprite_frames = SubResource("SpriteFrames_8reyq")
