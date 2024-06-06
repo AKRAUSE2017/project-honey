@@ -25,6 +25,9 @@ var sprite_height = 0
 
 func _ready():
 	animation.play("idle_down")
+	var dims = animation.sprite_frames.get_frame_texture("idle_down", 0).get_size()
+	sprite_width = dims[0]
+	sprite_height = dims[1]
 
 func _physics_process(_delta):
 	set_direction()
@@ -66,16 +69,16 @@ func player():
 	pass
 
 func can_move_x():
-	var cond1 = position.x > (x1_bound) and position.x < (x2_bound)
-	var cond2 = position.x < (x1_bound) and direction.x == 1
-	var cond3 = position.x > (x2_bound) and direction.x == -1
+	var cond1 = position.x > (x1_bound + sprite_width/2) and position.x < (x2_bound - sprite_width/2)
+	var cond2 = position.x < (x1_bound + sprite_width/2) and direction.x == 1
+	var cond3 = position.x > (x2_bound - sprite_width/2) and direction.x == -1
 
 	return cond1 or cond2 or cond3 
 
 func can_move_y():
-	var cond4 = position.y > (y1_bound) and position.y < (y2_bound)
-	var cond5 = position.y < (y1_bound) and direction.y == 1
-	var cond6 = position.y > (y2_bound) and direction.y == -1
+	var cond4 = position.y > (y1_bound + sprite_height/2) and position.y < (y2_bound - sprite_height/2)
+	var cond5 = position.y < (y1_bound + sprite_height/2) and direction.y == 1
+	var cond6 = position.y > (y2_bound - sprite_height/2) and direction.y == -1
 	
 	return cond4 or cond5 or cond6
 	

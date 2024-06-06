@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="InvItem" load_steps=3 format=3 uid="uid://cxa4iffesjgba"]
 
-[ext_resource type="Script" path="res://nodes/minigames/inventory/inventory_item.gd" id="1_pa80u"]
+[ext_resource type="Script" path="res://nodes/inventory/inventory_item.gd" id="1_pa80u"]
 [ext_resource type="Texture2D" uid="uid://c8hf0cajwekd8" path="res://assets/placeholders/Placeholder_honey.png" id="2_x13wa"]
 
 [resource]

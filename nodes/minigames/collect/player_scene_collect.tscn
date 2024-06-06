@@ -241,7 +241,7 @@ modulate = Color(0.85015, 0.875098, 1, 1)
 texture_filter = 1
 position = Vector2(0, 4.76837e-07)
 sprite_frames = SubResource("SpriteFrames_8reyq")
-animation = &"walk_up"
+animation = &"idle_right"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2DCollect"]
 shape = SubResource("RectangleShape2D_1xeey")

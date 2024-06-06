@@ -1,7 +1,7 @@
 [gd_scene load_steps=33 format=3 uid="uid://bv7yspp1fs8yw"]
 
 [ext_resource type="Script" path="res://nodes/minigames/honey/player_script_honey.gd" id="1_p3yar"]
-[ext_resource type="Resource" uid="uid://b7d0al06rm4f1" path="res://nodes/minigames/inventory/playerinv.tres" id="2_m21ii"]
+[ext_resource type="Resource" uid="uid://b7d0al06rm4f1" path="res://nodes/inventory/playerinv.tres" id="2_m21ii"]
 [ext_resource type="Texture2D" uid="uid://c4itt47rr620g" path="res://assets/official/robot_sprite_sheet.png" id="2_xwubs"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_2n7lc"]

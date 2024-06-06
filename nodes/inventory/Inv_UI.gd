@@ -1,7 +1,7 @@
 #Used for the UI of the inventory
 extends Control
 
-@onready var inv: Inv = preload("res://nodes/minigames/inventory/playerinv.tres") #preload the player's inventory
+@onready var inv: Inv = preload("res://nodes/inventory/playerinv.tres") #preload the player's inventory
 @onready var slots: Array = $NinePatchRect/GridContainer.get_children() #the slots that items can be placed into
 
 var is_open = false
