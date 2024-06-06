@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://by8sdufpj4nix"]
+
+[ext_resource type="Script" path="res://nodes/prompt/prompt_script.gd" id="1_pjise"]
+
+[node name="Prompt" type="Node2D"]
+script = ExtResource("1_pjise")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+offset_right = 192.0
+offset_bottom = 24.0
+text = "Test test tes"

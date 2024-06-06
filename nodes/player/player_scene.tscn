@@ -1,7 +1,7 @@
 [gd_scene load_steps=81 format=3 uid="uid://cogmuyup3hprl"]
 
 [ext_resource type="Script" path="res://nodes/player/player_script.gd" id="1_2ejbh"]
-[ext_resource type="Texture2D" uid="uid://c4itt47rr620g" path="res://assets/official/robot_sprite_sheet.png" id="2_8qe6l"]
+[ext_resource type="Texture2D" path="res://assets/official/robot_sprite_sheet.png" id="2_8qe6l"]
 [ext_resource type="Texture2D" uid="uid://b2m6ll7b66ncr" path="res://assets/placeholders/idle_down/idle_down1.png" id="2_gsd0n"]
 [ext_resource type="Texture2D" uid="uid://d08jhb4o7b2t6" path="res://assets/placeholders/idle_down/idle_down2.png" id="3_47rqs"]
 [ext_resource type="Texture2D" uid="uid://pu5g4iqa3mng" path="res://assets/placeholders/idle_down/idle_down3.png" id="4_8lo7n"]
@@ -465,7 +465,7 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_dqvnr"]
-size = Vector2(64, 81.3684)
+size = Vector2(24, 33.6842)
 
 [node name="Player" type="Node2D"]
 
@@ -481,12 +481,11 @@ script = ExtResource("1_2ejbh")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CharacterBody2D"]
 texture_filter = 1
 position = Vector2(0, 4.76837e-07)
-scale = Vector2(2.45833, 2.45833)
 sprite_frames = SubResource("SpriteFrames_8xyc4")
-animation = &"walk_up"
+animation = &"walk_right"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
-position = Vector2(0, 1.35)
+position = Vector2(0, 9.53674e-07)
 scale = Vector2(1, 0.95)
 shape = SubResource("RectangleShape2D_dqvnr")
 
@@ -497,3 +496,6 @@ offset_left = -62.0
 offset_top = -145.0
 offset_right = 67.0
 offset_bottom = -50.0
+
+zoom = Vector2(0.75, 0.75)
+

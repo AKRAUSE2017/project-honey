@@ -1,10 +1,9 @@
 extends Node2D
 
-@onready var panel = $PopupPanel
-@onready var label = $PopupPanel/RichTextLabel
+@onready var label = $CanvasLayer/RichTextLabel
 
 @export var text = ""
 
 func _process(_delta):
 	label.text = text
-	panel.visible = self.visible
+	label.visible = self.visible

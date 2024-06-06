@@ -269,7 +269,7 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_s3ubw"]
-size = Vector2(54, 57)
+size = Vector2(16, 8)
 
 [node name="PlayerSceneSmash" type="Node2D"]
 
@@ -281,10 +281,9 @@ script = ExtResource("1_gy4qf")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CharacterBody2D"]
 texture_filter = 1
 position = Vector2(0, 4.76837e-07)
-scale = Vector2(2.45833, 2.45833)
 sprite_frames = SubResource("SpriteFrames_i51lg")
 animation = &"jump"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
-position = Vector2(2, -0.5)
+position = Vector2(0, 12)
 shape = SubResource("RectangleShape2D_s3ubw")
