@@ -1,7 +1,6 @@
-[gd_scene load_steps=33 format=3 uid="uid://bv7yspp1fs8yw"]
+[gd_scene load_steps=32 format=3 uid="uid://bv7yspp1fs8yw"]
 
 [ext_resource type="Script" path="res://nodes/minigames/honey/player_script_honey.gd" id="1_p3yar"]
-[ext_resource type="Resource" uid="uid://b7d0al06rm4f1" path="res://nodes/minigames/inventory/playerinv.tres" id="2_m21ii"]
 [ext_resource type="Texture2D" uid="uid://c4itt47rr620g" path="res://assets/official/robot_sprite_sheet.png" id="2_xwubs"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_2n7lc"]
@@ -230,7 +229,7 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_4ns7u"]
-size = Vector2(30, 11)
+size = Vector2(31, 11)
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_b4ui5"]
 radius = 16.4924
@@ -242,7 +241,6 @@ z_index = 2
 y_sort_enabled = true
 collision_layer = 3
 script = ExtResource("1_p3yar")
-inv = ExtResource("2_m21ii")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="PlayerCharacterBody2D"]
 texture_filter = 1
@@ -257,6 +255,8 @@ visibility_layer = 2
 position = Vector2(0, 25)
 shape = SubResource("RectangleShape2D_4ns7u")
 
+[node name="Camera2D" type="Camera2D" parent="PlayerCharacterBody2D"]
+
 [node name="PlayerHoney_HitBox" type="Area2D" parent="PlayerCharacterBody2D"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PlayerCharacterBody2D/PlayerHoney_HitBox"]
@@ -264,7 +264,6 @@ position = Vector2(0, 4)
 shape = SubResource("CircleShape2D_b4ui5")
 
 [node name="Attack_Cooldown" type="Timer" parent="PlayerCharacterBody2D"]
-wait_time = 1.5
 
 [connection signal="body_entered" from="PlayerCharacterBody2D/PlayerHoney_HitBox" to="PlayerCharacterBody2D" method="_on_player_honey_hit_box_body_entered"]
 [connection signal="body_exited" from="PlayerCharacterBody2D/PlayerHoney_HitBox" to="PlayerCharacterBody2D" method="_on_player_honey_hit_box_body_exited"]
